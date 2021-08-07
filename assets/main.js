@@ -16,6 +16,7 @@ const prevBtn = $('.btn-prev')
 const randomBtn = $('.btn-random')
 const repeatBtn = $('.btn-repeat')
 const playlist = $('.playlist')
+const topUp = $('.topUp')
 var count = 0
 var arrayTemp = [];
 
@@ -163,7 +164,7 @@ const app = {
                         <p class="author">${song.singer}</p>
                     </div>
                     <div class="option">
-                        <i class="fas fa-ellipsis-h"></i>
+                        <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
             `
@@ -200,6 +201,14 @@ const app = {
 
             cd.style.width = newCdwidth > 0 ? newCdwidth + 'px' : 0 
             cd.style.opacity = newCdwidth / cdWidth
+
+            if(newCdwidth < 0 || newCdwidth == 0){
+                topUp.classList.add('up')
+            }
+            else{
+                topUp.classList.remove('up')
+            }
+
         }
 
 
@@ -275,6 +284,11 @@ const app = {
                 _this.scrollToActiveSong()
         }
 
+        // Khi upTop bài hát 
+        topUp.onclick = function() {
+             _this.scrollToupTop()
+        }
+
         // Khi random bài hát
         randomBtn.onclick = function(e) {
             _this.isRandom = !_this.isRandom // tự đảo ngược
@@ -296,6 +310,8 @@ const app = {
             } else { 
                 nextBtn.click()}  // khi dùng như này nó tự bấm next
         }
+
+       
 
         // Lắng nghe hành vi click vào playlist
         playlist.onclick = function(e) {
@@ -355,7 +371,7 @@ const app = {
         // this.loadCurrentSong()
          let newIndex;
                 newIndex = Math.floor(Math.random() * this.songs.length);
-                
+
                 if(count >0) {
                     do {
                         newIndex = Math.floor(Math.random() * this.songs.length);
@@ -382,6 +398,16 @@ const app = {
                 // var arrayTemp = [];
                 
     },
+
+     scrollToupTop: function() {
+
+        setTimeout(function() {
+            $('.song').scrollIntoView({
+                behavior: 'smooth',
+                block: 'end'
+            })
+        },200)
+    },  
 
     scrollToActiveSong: function() {
 

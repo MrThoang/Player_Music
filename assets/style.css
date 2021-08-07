@@ -46,6 +46,16 @@ html {
   border-bottom: 1px solid #ebebeb;
 }
 
+.up::before { /* Scroll up top */
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-bottom-color: #848484;
+  left: 186px;
+  bottom: -10px;
+  border-radius: 1px;
+}
+
 /* HEADER */
 header {
   text-align: center;
@@ -118,7 +128,7 @@ header h2 {
   align-items: center;
   justify-content: center;
   background-color: #ff6347;
-  box-shadow: 0px 4px 10px rgb(116, 103, 105);
+  box-shadow: 0px 2px 10px rgb(121 121 121);
 }
 
 .progress {
