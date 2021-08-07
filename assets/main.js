@@ -27,6 +27,41 @@ const app = {
     isRepeat: false,
     config: JSON.parse(localStorage.getItem(PLAYER_STORE_KEY)) || {},
     songs: [
+         {
+            name: 'Chẳng Thể Tìm Được Em',
+            singer: 'PhucXp ft. Freak D',
+            path: './assets/Music/ChẳngThểTìmĐượcEm.mp3',
+            image: 'https://i.ytimg.com/vi/mKxzJzp6oes/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDXNGqDdI9lwOw3Zf37XIKj88DF-Q'
+            
+        },
+        {
+            name: 'Thê Lương lofi',
+            singer: 'Phúc Chinh',
+            path: './assets/Music/Thê Lương.mp3',
+            image: 'https://i.ytimg.com/vi/P5obx0XMo-E/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBZ_AiCEN3uVBKyFsIz4ZiKOVyt2w'
+            
+        },
+        {
+            name: 'Tháng Năm lofi',
+            singer: 'Soobin x FreakD',
+            path: './assets/Music/Tháng Năm Lofi Ver Soobin x Freak D.mp3',
+            image: 'https://i.ytimg.com/vi/9T026UKcizA/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAhXS-cY-d0asYTctvQFJdTjp7ODw'
+            
+        },
+        {
+            name: '3107-3',
+            singer: 'Wn x Nâu x Duongg x Titie',
+            path: './assets/Music/31073 Wn x Nâu x Duongg x Titie.mp3',
+            image: 'https://i.ytimg.com/vi/kfw7MYah2n0/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBtkDKwsPHYzMFBbhDNGdd8erEjHw'
+            
+        },
+        {
+            name: 'Bông Hoa Chẳng Thuộc Về Ta',
+            singer: 'Như Việt',
+            path: './assets/Music/BôngHoaChẳngThuộcVềTa.mp3',
+            image: 'https://i.ytimg.com/vi/JgggA8Jtzyg/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLAimVKbjoeZSq7r0PRU7GvQyBrOiQ'
+            
+        },
         {
             name: 'Tay To',
             singer: 'RPT MCK',
