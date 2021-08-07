@@ -46,14 +46,23 @@ html {
   border-bottom: 1px solid #ebebeb;
 }
 
+.topUp {
+    margin-right: 40px;
+}
+
 .up::before { /* Scroll up top */
   content: "";
   position: absolute;
   border: 20px solid transparent;
   border-bottom-color: #848484;
-  left: 186px;
   bottom: -10px;
   border-radius: 1px;
+}
+
+.isflex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 /* HEADER */
@@ -213,4 +222,31 @@ header h2 {
   padding: 16px 8px;
   color: #000;
   font-size: 18px;
+}
+
+
+
+/* Responsive */
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+} 
+
+/* Mobile */ 
+@media (max-width: 739px) { 
+
+
+}
+
+
+/* Mobile */ 
+@media (max-width: 569px) { 
+
 }
